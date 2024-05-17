@@ -1,0 +1,276 @@
+*
+
+    margin: 0
+    padding: 0
+.container
+    max-width: 1200px
+    width: 90%
+    // background: gold
+    margin: auto
+header
+    font-family: "Raleway", sans-serif
+    a
+        line-height: 40px
+        text-decoration: none
+        color: #222
+        padding: 0 15px
+        transition: 0.6s
+        display: block
+        &:hover
+            opacity: 0.5
+    button
+        display: block
+        width: 40px
+        height: 40px
+        background: white
+        outline: 1px solid #ddd
+        border: none
+        background-image: url("img/search.svg")
+        background-size: 50%
+        background-repeat: no-repeat
+        background-position: center
+        transition: 0.6s
+        cursor: pointer
+        &:hover
+            opacity: 0.5
+        &#basket
+            background-image: url("img/bag.svg")
+        &#favorites
+            background-image: url("img/heart.svg")
+        &#profile
+            background-image: url("img/avatar-people-profile-svgrepo-com.svg")
+    .headerTop
+        border: 1px solid #ddd
+        .container
+            display: flex
+            justify-content: space-between
+            .headerLeft
+                display: flex
+            .headerRight
+                display: flex
+    .headerBottom
+        padding: 30px 0
+        .container
+            display: flex
+            justify-content: space-between
+            .logo
+                background-image: url(img/diamond.svg)
+                background-size: contain
+                height: 40px
+                width: 40px
+                background-repeat: no-repeat
+                background-position: center
+            .headerRight
+                display: flex
+.category
+    h2
+        margin-top: 10px
+    .cards
+        display: flex
+        gap: 15px
+        .card
+            flex: 1
+            .sergi
+                background-image: url(img/sergi.webp)
+            .colier
+                background-image: url(img/colier.webp)
+            .rings
+                background-image: url(img/rings.webp)
+            a
+                height: 550px
+                width: 100%
+                display: block
+                background-size: cover
+            h3
+                font-size: 20px
+                font-family: "Raleway", sans-serif
+
+.arrowLink
+    display: flex
+    align-items: center
+    text-decoration: none
+    color: white
+    font-size: 20px
+    font-family: "Raleway", sans-serif
+    transition: 0.6s
+    &:hover
+        opacity: 0.5
+    img
+        margin-left: 20px
+        height: 30px
+        filter: invert(100%)
+        // vertical-alig1n: middle
+h2
+    font-size: 40px
+    text-transform: uppercase
+    font-family: "Playfair Display", serif
+    margin-bottom: 30px
+    color: #222
+.hero
+    // нужно чтобы абсолютные теги выравнивались по родителю а не по экрану
+    position: relative
+    video
+        width: 100%
+    .heroInfo
+        position: absolute
+        font-family: "Playfair Display", serif
+        width: 100%
+        top: 50%
+        left: 0
+        h2
+            color: white
+            margin-bottom: 10px
+        h3
+            color: white
+            text-transform: uppercase
+            margin-bottom: 120px
+.department
+    margin: 100px auto 0 auto
+    max-width: 1600px
+
+    display: flex
+    flex-wrap: wrap
+    >div
+        background-image: url(img/men.webp)
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        &#taro
+            background-image: url(img/side.webp)
+        &#charity
+            background-image: url(img/charity.webp)
+        &#objects
+            background-image: url(img/books.webp)
+    h3
+        font-size: 20px
+        color: black
+    .card
+        background-size: 50%
+        width: 50%
+        display: flex
+        align-items: flex-end
+        // justify-content: center
+        // background: #d6d6d6
+        .departmentInfo
+            margin: 0 0 80px 200px
+            h3
+                margin-bottom: 20px
+            a
+                color: black
+                text-decoration: none
+    .bigCard
+        width: 50%
+        display: flex
+        align-items: flex-end
+        .departmentInfo
+            margin: 0 0 80px 50px
+            h3
+                color: #FFF
+                margin-bottom: 20px
+            a
+                color: #fff
+                text-decoration: none
+.hits
+    margin: 100px 0 0 0
+    .container
+        width: 97%
+    .up
+        width: 100%
+        display: flex
+        justify-content: space-between
+        margin-bottom: 30px
+        a
+            display: flex
+            color: black
+            align-items: center
+            text-decoration: none
+            img
+                width: 20px
+                height: 20px
+                align-items: center
+        h2
+            align-items: center
+            margin-bottom: 0
+    .cards
+        display: flex
+        width: 100%
+        gap: 15px
+        .card
+            width: 25%
+            p
+                color: #b4b4b4
+                margin: 5px 0 0 0
+                font-family: "Playfair Display", serif
+            .cardDown
+                display: flex
+                justify-content: space-between
+                h3,h4
+                    font-size: 20px
+                    font-family: "Playfair Display", serif
+
+            .lines
+                position: absolute
+                bottom: 5px
+                width: 100%
+                display: flex
+                gap: 10px
+                .line
+                    height: 2px
+                    width: 25%
+                    background: #cac9c971
+                    &.activeLine
+                        background: #1111119c
+            .cardImage
+                background-image: url(img/0.webp)
+                background-size: cover
+                background-position: center
+                background-repeat: no-repeat
+                position: relative
+                &#card1
+                    background-image: url(img/sergi.webp)
+                &#card2
+                    background-image: url(img/1.webp)
+                &#card3
+                    background-image: url(img/2.webp)
+                img
+                    width: 60px
+                    height: 60px
+                    top: 0
+                    padding: 20px
+                    box-sizing: border-box
+                    right: 0
+                    position: absolute
+.aboutUs
+    margin-bottom: 100px
+    .container
+        width: 90%
+        .info
+            p
+                font-size: 16px
+                font-family: "Raleway", sans-serif
+                width: 70%
+                margin: 0 0 15px 0
+                color: #444
+            h2
+                margin: 100px 0 20px 0
+                font-family: "Raleway", sans-serif
+.sertificates
+    background: #F0F0F0
+    padding: 100px 0
+    .container
+        width: 90%
+        display: flex
+        align-items: center
+        .left
+            width: 65%
+            pre
+                font-size: 70px
+                font-family: "Playfair Display", serif
+                font-weight: bold
+                color: #6d6d6d
+                margin-bottom: 30px
+            a
+                color: #6d6d6d
+                margin-top: 50px
+        >img
+            width: 35%

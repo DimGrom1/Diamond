@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  font-family: "Raleway", sans-serif;
+}
+header a {
+  line-height: 40px;
+  text-decoration: none;
+  color: #222;
+  padding: 0 15px;
+  transition: 0.6s;
+  display: block;
+}
+header a:hover {
+  opacity: 0.5;
+}
+header button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: white;
+  outline: 1px solid #ddd;
+  border: none;
+  background-image: url("img/search.svg");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.6s;
+  cursor: pointer;
+}
+header button:hover {
+  opacity: 0.5;
+}
+header button#basket {
+  background-image: url("img/bag.svg");
+}
+header button#favorites {
+  background-image: url("img/heart.svg");
+}
+header button#profile {
+  background-image: url("img/avatar-people-profile-svgrepo-com.svg");
+}
+header .headerTop {
+  border: 1px solid #ddd;
+}
+header .headerTop .container {
+  display: flex;
+  justify-content: space-between;
+}
+header .headerTop .container .headerLeft {
+  display: flex;
+}
+header .headerTop .container .headerRight {
+  display: flex;
+}
+header .headerBottom {
+  padding: 30px 0;
+}
+header .headerBottom .container {
+  display: flex;
+  justify-content: space-between;
+}
+header .headerBottom .container .logo {
+  background-image: url(img/diamond.svg);
+  background-size: contain;
+  height: 40px;
+  width: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header .headerBottom .container .headerRight {
+  display: flex;
+}
+
+.category h2 {
+  margin-top: 10px;
+}
+.category .cards {
+  display: flex;
+  gap: 15px;
+}
+.category .cards .card {
+  flex: 1;
+}
+.category .cards .card .sergi {
+  background-image: url(img/sergi.webp);
+}
+.category .cards .card .colier {
+  background-image: url(img/colier.webp);
+}
+.category .cards .card .rings {
+  background-image: url(img/rings.webp);
+}
+.category .cards .card a {
+  height: 550px;
+  width: 100%;
+  display: block;
+  background-size: cover;
+}
+.category .cards .card h3 {
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+}
+
+.arrowLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  transition: 0.6s;
+}
+.arrowLink:hover {
+  opacity: 0.5;
+}
+.arrowLink img {
+  margin-left: 20px;
+  height: 30px;
+  filter: invert(100%);
+}
+
+h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.hero {
+  position: relative;
+}
+.hero video {
+  width: 100%;
+}
+.hero .heroInfo {
+  position: absolute;
+  font-family: "Playfair Display", serif;
+  width: 100%;
+  top: 50%;
+  left: 0;
+}
+.hero .heroInfo h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+.hero .heroInfo h3 {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 120px;
+}
+
+.department {
+  margin: 100px auto 0 auto;
+  max-width: 1600px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.department > div {
+  background-image: url(img/men.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.department > div#taro {
+  background-image: url(img/side.webp);
+}
+.department > div#charity {
+  background-image: url(img/charity.webp);
+}
+.department > div#objects {
+  background-image: url(img/books.webp);
+}
+.department h3 {
+  font-size: 20px;
+  color: black;
+}
+.department .card {
+  background-size: 50%;
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+}
+.department .card .departmentInfo {
+  margin: 0 0 80px 200px;
+}
+.department .card .departmentInfo h3 {
+  margin-bottom: 20px;
+}
+.department .card .departmentInfo a {
+  color: black;
+  text-decoration: none;
+}
+.department .bigCard {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+}
+.department .bigCard .departmentInfo {
+  margin: 0 0 80px 50px;
+}
+.department .bigCard .departmentInfo h3 {
+  color: #FFF;
+  margin-bottom: 20px;
+}
+.department .bigCard .departmentInfo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hits {
+  margin: 100px 0 0 0;
+}
+.hits .container {
+  width: 97%;
+}
+.hits .up {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.hits .up a {
+  display: flex;
+  color: black;
+  align-items: center;
+  text-decoration: none;
+}
+.hits .up a img {
+  width: 20px;
+  height: 20px;
+  align-items: center;
+}
+.hits .up h2 {
+  align-items: center;
+  margin-bottom: 0;
+}
+.hits .cards {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+}
+.hits .cards .card {
+  width: 25%;
+}
+.hits .cards .card p {
+  color: #b4b4b4;
+  margin: 5px 0 0 0;
+  font-family: "Playfair Display", serif;
+}
+.hits .cards .card .cardDown {
+  display: flex;
+  justify-content: space-between;
+}
+.hits .cards .card .cardDown h3, .hits .cards .card .cardDown h4 {
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+}
+.hits .cards .card .lines {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.hits .cards .card .lines .line {
+  height: 2px;
+  width: 25%;
+  background: rgba(202, 201, 201, 0.4431372549);
+}
+.hits .cards .card .lines .line.activeLine {
+  background: rgba(17, 17, 17, 0.6117647059);
+}
+.hits .cards .card .cardImage {
+  background-image: url(img/0.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.hits .cards .card .cardImage#card1 {
+  background-image: url(img/sergi.webp);
+}
+.hits .cards .card .cardImage#card2 {
+  background-image: url(img/1.webp);
+}
+.hits .cards .card .cardImage#card3 {
+  background-image: url(img/2.webp);
+}
+.hits .cards .card .cardImage img {
+  width: 60px;
+  height: 60px;
+  top: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  right: 0;
+  position: absolute;
+}
+
+.aboutUs {
+  margin-bottom: 100px;
+}
+.aboutUs .container {
+  width: 90%;
+}
+.aboutUs .container .info p {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  width: 70%;
+  margin: 0 0 15px 0;
+  color: #444;
+}
+.aboutUs .container .info h2 {
+  margin: 100px 0 20px 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.sertificates {
+  background: #F0F0F0;
+  padding: 100px 0;
+}
+.sertificates .container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+.sertificates .container .left {
+  width: 65%;
+}
+.sertificates .container .left pre {
+  font-size: 70px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  color: #6d6d6d;
+  margin-bottom: 30px;
+}
+.sertificates .container .left a {
+  color: #6d6d6d;
+  margin-top: 50px;
+}
+.sertificates .container > img {
+  width: 35%;
+}/*# sourceMappingURL=style.css.map */
