@@ -15,6 +15,10 @@
 </head>
 
 <body>
+    <div class="sideButtons">
+        <button id="buttonFavorites"></button>
+        <button id="buttonBag"></button>
+    </div>
     <header>
         <div class="headerTop">
             <div class="container">
@@ -24,7 +28,7 @@
                     <a href="">Контакты</a>
                 </div>
                 <div class="headerRight">
-                    <a href="">+7 (495) 590-41-32</a>
+                    <a href="tel:+74955904132">+7 (495) 590-41-32</a>
                     <button></button>
                     <button id="basket"></button>
                     <button id="favorites"></button>
@@ -217,6 +221,49 @@
             <img src="img/1.jpg.webp" alt="">
         </div>
     </div>
+    <div class="subscription">
+        <div class="email">
+            <h2>ПОДПИШИТЕСЬ НА РАССЫЛКУ, ЧТОБЫ ПЕРВЫМИ <br> УЗНАВАТЬ О НОВИНКАХ, СЕЗОННЫХ РАСПРОДАЖАХ <br> И СЕКРЕТНЫХ
+                ПРОМОКОДАХ</h2>
+            <input type="text" placeholder="Ваш e-mail">
+            <button>ПОДПИСАТЬСЯ</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footerTop">
+            <div class="container">
+                <img src="img/diamond.svg" alt="">
+                <ul>
+                    <li><a href="">Сертификаты</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">О нас</a></li>
+                    <li><a href="">Магазины</a></li>
+                    <li><a href="">Гарантии и возврат</a></li>
+                    <li><a href="">Оферта</a></li>
+                    <li><a href="">Как ухаживать за украшениями</a></li>
+                    <li><a href="">Как выбрать размер</a></li>
+                    <li><a href="">Доставка и оплата</a></li>
+                    <li><a href="">Вакансии</a></li>
+                </ul>
+                <div class="contacts">
+                    <p>Связаться с нами:</p>
+                    <a href="tel:+74955904132">+7 (495) 590-41-32</a>
+                    <p>Мы в мессенджерах:</p>
+                    <div class="socials">
+                        <a href=""></a>
+                        <a href="" id="tg"></a>
+                        <a href="" id="wa"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <div class="container">
+                <p>© 2024. Diamond.store. Все права защищены</p>
+            </div>
+        </div>
+    </footer>
     <script>
         let cards = document.getElementsByClassName("department")[0].children
         let cardImages = document.getElementsByClassName("cardImage")
@@ -233,4 +280,3 @@
 </html>
 <!-- продолжать сайт -->
 <!-- заменить сердечки на тег a-->
-<!-- поменять картинки -->
